@@ -1,0 +1,162 @@
+body {
+    padding: 10px 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+}
+
+/*Vote Nav*/
+.profile_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.back_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.vote_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vote_nav_text {
+    font-size: 25px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+/***************/
+.elec_table {
+    margin: 20px 0px;
+}
+
+.elec_main {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.elec_sub {
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vote_table {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.bld {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+    background: #B2CCBC;
+    color: #008435;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.vote_table div {
+    width: calc(100%/3);
+}
+
+.vt1 {
+    padding-left: 10px;
+}
+
+.vt2 {
+    display: flex;
+    justify-content: center;
+    /* background: yellow; */
+}
+
+.vt3 {
+    display: flex;
+    justify-content: flex-end;
+    /* background: blue; */
+}
+
+.vt3 span {
+    /* background: pink; */
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/*remove 2 effect*/
+.elec_cand_name {
+    display: block!important;
+    justify-content: unset!important;
+    background: none!important;
+}
+
+.cand_no_cover {
+    display: flex;
+    align-items: center;
+}
+
+.elec_cand_no {
+    background: gray;
+    min-width: 35px;
+    min-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    margin: 0px 10px;
+}
+
+.vt_back {
+    background: rgb(236, 236, 236);
+    border: 1px solid lightgray;
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.rm-width {
+    width: 100%!important;
+}
+
+
+/*remove width/3 in cand result*/
+.vote_table .rm_width {
+    width: 100%!important;
+}
+
+@media (max-width: 500px) {
+    .bld, .vt_back {
+        width: 150%;
+    }
+
+    /*scroll vote table*/
+    .vote_data_parent {
+    overflow: scroll!important;
+    }
+
+    .back_btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .profile_pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}

@@ -1,0 +1,95 @@
+body {
+    padding: 10px 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+}
+
+/*Vote Nav*/
+.profile_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.back_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.vote_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vote_nav_text {
+    font-size: 25px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.upcoming_election, .past_election {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.upelection_details div, .pastelection_details div {
+    background: rgb(236, 236, 236);
+    border: 1px solid lightgray;
+    padding: 15px 10px;
+    font-size: 20px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upelection_cover, .pastelection_cover {
+    margin: 20px 0px;
+}
+
+.pastelection_cover {
+    margin-top: 50px;
+}
+
+.seemore {
+    background: rgb(236, 236, 236);
+    border: 1px solid lightgray;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*************/
+@media (max-width: 500px) {
+    .seemore {
+        width: 150px;
+    }
+
+    .back_btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .profile_pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
